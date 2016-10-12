@@ -12,6 +12,9 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
+# Lineage Build
+TARGET_UNOFFICIAL_BUILD_ID := SonyLOS
+
 # Caf
 BOARD_USES_QCOM_HARDWARE := true
 SONY_AOSP_KERNEL_VARIANT := true
