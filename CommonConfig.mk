@@ -15,8 +15,6 @@
 # Common path
 COMMON_PATH := device/sony/common
 
-TARGET_BOARD_AUTO := true
-
 TARGET_NO_RADIOIMAGE := true
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RECOVERY := false
