@@ -35,7 +35,7 @@ TARGET_USE_SDCLANG := true
 
 # Lineage Packages
 PRODUCT_PACKAGES += \
-    Gello
+    Browser
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
