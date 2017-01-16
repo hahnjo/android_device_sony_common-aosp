@@ -58,3 +58,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
     telephony.lteOnGSMDevice=1
+
+ifneq ($(TARGET_BUILD_VARIANT),user)
+WITH_SU := true
+endif
