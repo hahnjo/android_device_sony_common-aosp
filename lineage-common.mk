@@ -13,6 +13,7 @@
 # limitations under the License.
 
 BOARD_VENDOR := sony
+include vendor/qcom/audio/proprietary.mk
 
 # Lineage Build
 TARGET_UNOFFICIAL_BUILD_ID := SonyLOS
@@ -43,6 +44,16 @@ TARGET_USE_SDCLANG := true
 # Lineage Packages
 PRODUCT_PACKAGES += \
     Browser
+
+# Audio offload
+PRODUCT_PROPERTY_OVERRIDES += \
+    audio.offload.buffer.size.kb=32 \
+    audio.offload.gapless.enabled=false \
+    audio.offload.multiple.enabled=false \
+    audio.offload.pcm.16bit.enable=true \
+    audio.offload.pcm.24bit.enable=true \
+    audio.offload.video=true \
+    av.streaming.offload.enable=true
 
 # Properties
 PRODUCT_PROPERTY_OVERRIDES += \
