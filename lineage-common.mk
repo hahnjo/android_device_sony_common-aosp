@@ -45,6 +45,18 @@ TARGET_USE_SDCLANG := true
 PRODUCT_PACKAGES += \
     Browser
 
+# GFX
+PRODUCT_PACKAGES += \
+    libOmxQcelp13Dec \
+    libOmxEvrcDec \
+    libOmxWmaDec \
+    libOmxAacDec \
+    libOmxAacEnc \
+    libOmxQcelp13Enc \
+    libOmxEvrcEnc \
+    libOmxAmrEnc \
+    libOmxAmrwbplusDec
+
 # Audio offload
 PRODUCT_PROPERTY_OVERRIDES += \
     audio.offload.buffer.size.kb=32 \
