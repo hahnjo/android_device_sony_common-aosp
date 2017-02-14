@@ -294,9 +294,6 @@ ifneq ($(filter shinano rhine, $(SOMC_PLATFORM)),)
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.HAL3.enabled=0
 else
-PRODUCT_COPY_FILES += \
-    $(COMMON_PATH)/rootdir/system/etc/sec_config:system/etc/sec_config
-
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.camera.HAL3.enabled=1
 endif
